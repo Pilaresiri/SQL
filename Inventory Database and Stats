@@ -1,0 +1,22 @@
+CREATE TABLE Product (id INTEGER PRIMARY KEY, name TEXT, cost INTEGER, sell_price INTEGER, wholesale_price INTEGER, Inventory INTEGER, department TEXT, tax1 INTEGER, tax2 INTEGER, code_product INTEGER, unit TEXT);
+
+INSERT INTO Product VALUES (01,	"Sabritas 50gr",9,	15,	14,	50,	"Papitas",	3,	8,	50192109,	"H87");
+INSERT INTO Product VALUES (02,	"Ruffles 30gr",9,	15,	14,	50,	"Papitas",	3,	8,	50192119,	"H86");
+INSERT INTO Product VALUES (03,	"Duvalin 10gr",3,	5,	5,	30,	"Dulces",	3,	8,	50161800,	"H81");
+INSERT INTO Product VALUES (04,	"Chitos 30gr",5,	16,	15,	60,	"Papitas",	3,	8,	50161801,	"H67");
+INSERT INTO Product VALUES (05,	"Doritos 35gr",	6,	17,	16,	70,	"Papitas",	3,	8,	50161802,	"H43");
+INSERT INTO Product VALUES (06,	"Guddies 30gr",	6,	17,	16,	60,		"Papitas",	3,	8,	50161803,	"H90");
+INSERT INTO Product VALUES (07,	"Tostacos 30gr",	6,	17,	16,	90,	"	Papitas",	3,	8,	50161804,	"H71");
+INSERT INTO Product VALUES (08,	"Papitas de Limon 30gr",	4,	13,	14,	80,"	Papitas",	3,	8,	50161805,"H92");
+INSERT INTO Product VALUES (09,	"Lays Picantes",	6,	17,	16,	100,"	Papitas",	3,	8,	50161806,"	H55");
+INSERT INTO Product VALUES (10,	"Maizitos",	4,	13,	12,	50,"Papitas",	3,	8,	50161807,	"H46");
+INSERT INTO Product VALUES (11,	"Chocoballs",	3,	10,	9,	60,"	Dulces",	3,	8,	50161808,	"H11");
+INSERT INTO Product VALUES (12,	"Papas de Huevo Frito",	3,	10,	9,	50,"	Papitas",	3,	8,	50161809,	"H96");
+INSERT INTO Product VALUES (13,	"Yuquitas",	5,	16,	15,	80,"	Papitas",	3,	8,	50161810,	"H97");
+INSERT INTO Product VALUES (14,	"Gominolas",	3,	10,	9,	120,"	Dulces",	3,	8,	50161811,"	H13");
+INSERT INTO Product VALUES (15,	"Regaliz",	3,	8,	7,	70,"	Dulces",	3,	8,	50161831,"	H42");
+
+SELECT  name , inventory, sell_price  FROM product WHERE cost<8;
+
+/*How many product are more 10 dollars*/
+SELECT COUNT(*) AS greater_than_0 FROM product WHERE sell_price > 10;
